@@ -1,0 +1,120 @@
+#principals
+{
+    padding: 0 20px 0 10px;
+    width: 660px;
+    float: left;
+    text-align: justify;
+    text-align-last:center;
+    /* for IE9 */
+    -ms-text-align-last:left;
+
+}
+
+#principals h2
+{
+    width: 660px;
+    height:50px;
+    text-align: center;
+    color: #283a88;
+    margin: 0 0 30px 0;
+    padding:0;
+    display: block;
+    font-weight: normal;
+    background-position: 0px bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/section_h2_bottom_bg.png);
+}
+
+#principals h2 span
+{
+    color: #f8971d;
+
+}
+
+#principals ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#principals li
+{
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 0 0 20px 0;
+
+}
+
+
+#principals li div.contact-info
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+#principals li div.contact-info p
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+
+#principals li div.contact-info a
+{
+    text-decoration: none;
+    color: #283a88;
+}
+
+
+#principals li div.contact-info span
+{
+    color: #f8971d;
+}
+
+#principals li div.contact-info img
+{
+    display: block;
+    padding-bottom: 10px;
+}
+
+#principals li div.description
+{
+    float: right;
+    width: 440px;
+    margin: 0;
+    padding: 0;
+}
+
+#principals li div.description h3
+{
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #283a88;
+}
+
+#principals li div.description h3 span
+{
+    margin: 0;
+    padding: 0;
+    color: #f8971d;
+}
+
+#principals li div.description p
+{
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+
+
+#principals li div.contact-info .v-card
+{
+    padding-top: 10px;
+}

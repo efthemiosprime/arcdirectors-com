@@ -1,0 +1,181 @@
+/* content home */
+#home
+{
+    margin: 175px 0 0 0;
+    padding: 0;
+    text-align: justify;
+    text-align-last:justify;
+    /* for IE9 */
+    -ms-text-align-last:left;
+}
+
+#home section
+{
+    margin: 30px 0 0 0;
+    padding: 0 20px 0 0;
+    width: 310px;
+    float: left;
+
+}
+
+#home section:first-of-type
+{
+    margin-right: 30px;
+}
+
+#home section a
+{
+    text-decoration: none;
+    color: #f8971d;
+}
+
+#home ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#home section li
+{
+
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 0 0 20px 15px;
+    background: url(../images/home_news_bullet.png) left top no-repeat;
+
+}
+
+#home section p
+{
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+
+
+#home section h2
+{
+    width: 310px;
+    height:50px;
+    text-align: center;
+    color: #283a88;
+    margin: 0 0 10px 0;
+    padding:0;
+    display: block;
+    font-weight: normal;
+    background-position: 0px bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/article-bottom-bg.png);
+}
+
+
+#home section h2 span
+{
+    color: #f8971d;
+
+}
+
+#home li p
+{
+    margin: 0;
+    padding: 0;
+}
+
+#home li p.date
+{
+    color: #4d4d4d;
+}
+#home li p.title
+{
+    color: #283a88;
+    font-size: 14px;
+}
+#home li p.full-story
+{
+    color: #f8971d;
+    font-size: 14px;
+}
+
+.splash
+{
+    position: relative;
+    width: 944px;
+    height: 369px;
+    margin:  auto;
+    padding: 0px 0 20px;
+}
+
+.splash img
+{
+    border-bottom: 2px solid #273988;
+}
+
+
+
+.splash div.quick-info
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    min-height: 367px;
+    max-height: 367px;
+    margin: 0;
+    padding: 0;
+    background-color: #213078;
+    opacity: 0.9;
+
+}
+.splash div.quick-info h2
+{
+    color: #f8971d;
+    margin: 0;
+    padding: 50px 20px 0 35px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.splash div.quick-info p
+{
+    color: #ffffff;
+    width: 240px;
+    margin: 0;
+    padding: 0px 20px 0 35px;
+    font-size: 16px;
+
+    text-align: left;
+    text-align-last:left;
+    /* for IE9 */
+    -ms-text-align-last:left;
+}
+
+#slideshow
+{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#slideshow li {
+    list-style: none;
+}
+#slideshow li img {
+    position: absolute;
+    overflow: hidden;
+    top: 0; left: 0;
+
+}
+
+
+.slide {
+    position: absolute;
+    width: 940px;
+    height: 366px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}

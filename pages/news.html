@@ -1,0 +1,28 @@
+<section class="page_content">
+
+    <div class="wrapper">
+        <section id="news">
+
+            <h2>
+                NEWS & <span>ARTICLES</span>
+            </h2>
+
+            <ul>
+                <li ng-repeat="entry in data.items">
+                  <p class="date">{{ entry.date }}</p>
+                  <p class="title">{{ entry.title }}</p>
+                  <p>{{ entry.entry }}</p>
+                  <p class="full-story"><a href="{{ entry.location }}" target="_blank">FULL STORY</a></p>
+                    <div class="hr"></div>
+
+                </li>
+            </ul>
+
+        </section>
+
+
+        <aside class="side-pull-right" ng-include="sideURL"></aside>
+
+    </div>
+
+</section>

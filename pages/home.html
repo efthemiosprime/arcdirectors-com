@@ -1,0 +1,86 @@
+<section id="home">
+
+    <div class="wrapper">
+        <div class="splash">
+
+            <div id="slideshow" arc-slideshow>
+                <img src="images/splash_940.jpg" class="slide">
+                <img src="images/splash2_940.jpg" class="slide">
+            </div>
+
+            <div class="quick-info">
+                <h2>{{ homeData.quickInfo.title }}</h2>
+                <p>{{ homeData.quickInfo.info}}</p>
+            </div>
+        </div>
+        <section>
+
+            <h2>
+                ABOUT <span>US</span>
+            </h2>
+            <p ng-repeat="entry in aboutUs.entries">{{ entry.p }}</p>
+
+            <a href="http://www.aima.org/" target="_blank"><img src="images/aima_logo.png" style="margin-bottom: 10px"></a>
+
+        </section>
+
+        <section>
+
+            <h2>LATEST <span>NEWS</span></h2>
+
+            <ul>
+                <li ng-repeat="entry in latestNews.items | limitTo:3">
+                    <p class="date">{{ entry.date }}</p>
+                    <p class="title">{{ entry.title }}</p>
+                    <p>{{ entry.entry }}</p>
+                    <p class="full-story"><a href="{{ entry.location }}" target="_blank">FULL STORY</a></p>
+                    <div class="hr clear"></div>
+                </li>
+            </ul>
+
+            <div class="padding"></div>
+
+        </section>
+
+        <aside class="side-pull-right">
+            <div class="side-contact-us-box">
+                <h2>CONTACT <span>US</span></h2>
+                <div class="arrow"></div>
+                <div class="info">
+                    <h3>Cayman Islands</h3>
+
+                    <p><span>O:</span> + 1 345 769 3400</p>
+                    <p><span>F:</span> + 1 345 769 3404</p>
+                    <p><span>E:</span> <a href="mailto:atooker@arcdirectors.com">atooker@arcdirectors.com</a></p>
+                </div>
+
+                <div class="info">
+                    <h3>Ireland</h3>
+                    <p><span>P:</span> + 353 1 659 9478</p>
+                    <p><span>F:</span> + 353 1 659 9410</p>
+                    <p><span>E:</span> <a href="roneill@arcdirectors.com">roneill@arcdirectors.com</a></p>
+                </div>
+            </div>
+
+            <a href="materials/ARC-Brochure.pdf" target="_blank">
+                <div class="download-box">
+                    <p>DOWNLOAD <br>OUR<br> BROCHURE</p>
+                    <div class="down-icon">
+                        <img src="images/down_arrow.png" alt="down arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a href="#/principals">
+                <div class="side-box">
+                    <p>MEET OUR<br> PRINCIPALS</p>
+                    <div class="down-icon">
+                        <img src="images/down_arrow.png" alt="down arrow">
+                    </div>
+                </div>
+            </a>
+        </aside>
+
+    </div>  <!-- end wrapper -->
+
+</section> <!-- end home -->

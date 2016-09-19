@@ -1,0 +1,59 @@
+<section class="page_content">
+
+    <div class="wrapper">
+        <section id="contact">
+
+            <h2>
+                CONTACT <span>US</span>
+            </h2>
+
+            <ul class="company-info-cayman">
+                <li>
+                        <h4>{{ data.contactInfoCayman.title }}</h4>
+                        <p ng-repeat="item in data.contactInfoCayman.items">{{ item }}</p>
+                       <div class="hr"></div>
+
+
+                </li>
+
+
+                <li>
+                    <p><span>P:</span> {{ data.contactInfoCayman.phone }}</p>
+                    <p><span>F:</span> {{ data.contactInfoCayman.fax }}</p>
+                    <p><span>E:</span> <a href="mailto:{{ data.contactInfoCayman.email }}">{{ data.contactInfoCayman.email }}</a></p>
+                    <div class="hr"></div>
+
+                </li>
+
+            </ul>
+
+
+            <ul class="company-info-ireland">
+                <li>
+                        <h4>{{ data.contactInfoIreland.title }}</h4>
+                        <p ng-repeat="item in data.contactInfoIreland.items">{{ item }}</p>
+                       <div class="hr"></div>
+
+
+                </li>
+
+
+                <li>
+                    <p><span>P:</span> {{ data.contactInfoIreland.phone }}</p>
+                    <p><span>F:</span> {{ data.contactInfoIreland.fax }}</p>
+                    <p><span>E:</span> <a href="mailto:{{ data.contactInfoCayman.email }}">{{ data.contactInfoIreland.email }}</a></p>
+                    <div class="hr"></div>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <aside class="side-pull-right" ng-include="sideURL"></aside>
+
+    </div>
+
+
+
+</section>

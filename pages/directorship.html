@@ -1,0 +1,42 @@
+<section class="page_content">
+
+    <div class="wrapper">
+        <section id="directorship">
+
+            <h2>
+                DIRECTORSHIP <span>SERVICES</span>
+            </h2>
+
+            <p ng-repeat="item in data.intro" ng-class="{highlight : $first}">
+                {{ item.p }}
+            </p>
+
+            <ul>
+                <li ng-repeat="item in data.items">
+                    <h3>{{ item.title }}</h3>
+                    <p>
+                       {{ item.desc }}
+                    </p>
+                    <ul>
+                        <li ng-repeat="subItem in item.entries">
+                            <h4>{{ subItem.title }}</h4>
+                            <p ng-show="subItem.content">{{ subItem.content }}</p>
+                            <ul class="bullet">
+                                <li ng-repeat="bullet in subItem.bullets">
+                                     {{ bullet }}
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <aside class="side-pull-right" ng-include="sideURL"></aside>
+
+
+    </div>
+
+</section>

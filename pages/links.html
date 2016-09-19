@@ -1,0 +1,25 @@
+<section class="page_content">
+
+    <div class="wrapper">
+        <section id="links">
+
+            <h2>
+                LINKS
+            </h2>
+
+            <ul>
+                <li ng-repeat="link in data.links">
+                    <a href="http://{{link.url}}">{{ link.title  }}</a>
+                    <div class="hr"></div>
+                </li>
+            </ul>
+
+
+        </section>
+
+
+        <aside class="side-pull-right" ng-include="sideURL"></aside>
+
+    </div>
+
+</section>

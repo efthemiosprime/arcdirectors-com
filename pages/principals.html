@@ -1,0 +1,37 @@
+<section class="page_content">
+
+    <div class="wrapper">
+        <section id="principals">
+
+            <h2>
+                OUR <span>PRINCIPALS</span>
+            </h2>
+
+            <ul>
+                <li ng-repeat="principal in data.items">
+                    <div class="contact-info">
+                        <img ng-src="images/{{principal.image}}"/>
+                        <p><span>O:</span> {{ principal.o }}</p>
+                        <p><span>M:</span> {{ principal.m }}</p>
+                        <p><span>F:</span> {{ principal.f }}</p>
+                        <p><span>E:</span><a href="mailto:{{ principal.e }}?subject=Your+subject+here"> {{ principal.e }}</a></p>
+                        <a href="materials/{{principal.vcf}}"><img class="v-card" src="images/v_card_icon.png"/></a>
+                    </div>
+
+                    <div class="description">
+                        <h3>{{ principal.name }} <span>Principal</span></h3>
+                        <p>{{ principal.description }}</p>
+                    </div>
+                    <div class="hr clear"></div>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <aside class="side-pull-right" ng-include="sideURL"></aside>
+
+    </div>
+
+</section>

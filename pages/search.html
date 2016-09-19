@@ -1,0 +1,28 @@
+<section class="page_content">
+
+    <div class="wrapper">
+        <section id="search">
+
+            <h2>
+                SEARCH RESULTS FOR : <span>{{ searchForString }}</span>
+            </h2>
+
+            <p ng-show="!hasResult">The search <strong>{{ searchForString }}</strong> did not match any documents</p>
+            <ul>
+                <li ng-repeat="item in result">
+                    <h3>{{ item.page }}</h3>
+                    <p result-ellipsis>{{ item.data }}</p>
+                    <a href="#/{{ item.page.toLowerCase() }}">READ IT</a>
+                    <div class="hr"></div>
+                </li>
+            </ul>
+
+
+        </section>
+
+
+        <aside class="side-pull-right" ng-include="sideURL"></aside>
+
+    </div>
+
+</section>

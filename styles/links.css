@@ -1,0 +1,60 @@
+#links
+{
+
+    padding: 0 20px 0 10px;
+    width: 920px;
+    text-align: justify;
+    text-align-last:center;
+    /* for IE9 */
+    -ms-text-align-last:left;
+}
+
+#links h2
+{
+    width: 920px;
+    height:50px;
+    text-align: center;
+    color: #283a88;
+    margin: 0 0 30px 0;
+    padding:0;
+    display: block;
+    font-weight: normal;
+    background-position: 0px bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/terms_h2_bottom_bg.png);
+}
+
+#links h3
+{
+    color: #283a88;
+    margin: 0;
+    padding:0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+
+#links ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#links li
+{
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+#links li a
+{
+    color: #283a88;
+    text-decoration: none;
+}
+
+
